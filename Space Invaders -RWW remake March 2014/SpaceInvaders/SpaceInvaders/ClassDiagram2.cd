@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.Input.InputReader">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="InputReader" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+      <Method Name="isPressedK" Hidden="true" />
+      <Method Name="isPressedK2" Hidden="true" />
+    </Members>
+    <AssociationLine Name="newStateK" Type="Microsoft.Xna.Framework.Input.KeyboardState">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.089" Y="-0.273" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAACAAAAAAAABAABAEQAAACAAAAIA=</HashCode>
+      <FileName>Input\InputReader.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="newStateK" />
+      <Field Name="oldStateK" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="Microsoft.Xna.Framework.Input.KeyboardState" Collapsed="true">
+    <Position X="3.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

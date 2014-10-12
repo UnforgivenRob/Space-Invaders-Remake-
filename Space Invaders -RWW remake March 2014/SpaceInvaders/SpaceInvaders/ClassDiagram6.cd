@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.Screens.BackgroundScreen">
+    <Position X="19.5" Y="5.5" Width="1.5" />
+    <Members>
+      <Method Name="BackgroundScreen" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAKAAQQAAAgABAAAAACIAIAAAAAAAAAAIAEAAA=</HashCode>
+      <FileName>Screens\BackgroundScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Screens.StartScreen">
+    <Position X="24" Y="5.5" Width="1.5" />
+    <Members>
+      <Field Name="currentEvent" Hidden="true" />
+      <Field Name="sbm" Hidden="true" />
+      <Method Name="StartScreen" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACCAISAAACAAAiAAAAABAAABQAAIAAAAAAAAAEAIA=</HashCode>
+      <FileName>Screens\StartScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Screens.GameOverScreen">
+    <Position X="28.25" Y="5.5" Width="1.5" />
+    <Members>
+      <Field Name="currentEvent" Hidden="true" />
+      <Method Name="GameOverScreen" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAACAICAAAAAAAgAAAAAABAAAAAAAAIIAAAAAAEAAA=</HashCode>
+      <FileName>Screens\GameOverScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Screens.GameScreen">
+    <Position X="21.75" Y="5.5" Width="1.5" />
+    <Members>
+      <Field Name="am" Hidden="true" />
+      <Field Name="cgm" Hidden="true" />
+      <Field Name="cpm" Hidden="true" />
+      <Field Name="d" Hidden="true" />
+      <Field Name="debug" Hidden="true" />
+      <Field Name="g" Hidden="true" />
+      <Method Name="GameScreen" Hidden="true" />
+      <Field Name="gom" Hidden="true" />
+      <Field Name="ir" Hidden="true" />
+      <Field Name="sbm" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AGAAAAACAAAAARkiAACYAAAAAIAAAAAMAIAAAAAEAAA=</HashCode>
+      <FileName>Screens\GameScreen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="score" />
+      <Field Name="setup" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Screens.Screen">
+    <Position X="24" Y="2.5" Width="1.5" />
+    <Members>
+      <Field Name="sb" Hidden="true" />
+      <Field Name="scm" Hidden="true" />
+      <Method Name="Screen" Hidden="true" />
+      <Field Name="sm" Hidden="true" />
+      <Field Name="ts" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ABAAAAACAAAEAAAiAAAAAAAAAAAAAAAAAgAAIAIEAAA=</HashCode>
+      <FileName>Screens\Screen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Screens.ScreenManager">
+    <Position X="17.5" Y="2.5" Width="1.5" />
+    <Members>
+      <Method Name="getSB" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+      <Field Name="sb" Hidden="true" />
+      <Field Name="sbm" Hidden="true" />
+      <Method Name="ScreenManager" Hidden="true" />
+      <Method Name="setSB" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="SpaceInvaders.Screens.ScreenManager.ScreenLL" Collapsed="true">
+        <NestedTypes>
+          <Class Name="SpaceInvaders.Screens.ScreenManager.ScreenLL.node" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>Screens\ScreenManager.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Class>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>Screens\ScreenManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAmIAMAAAAAAABAgAAAQBAAAAAGAgA=</HashCode>
+      <FileName>Screens\ScreenManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Screens.ScreenText">
+    <Position X="26.75" Y="2.5" Width="1.5" />
+    <Members>
+      <Method Name="ScreenText" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAABoAAAAAAAAAAAMSAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Screens\ScreenText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Screens.SelectScreen">
+    <Position X="26.25" Y="5.5" Width="1.5" />
+    <Members>
+      <Field Name="ir" Hidden="true" />
+      <Method Name="SelectScreen" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IAAAAAACAAAAAIAgAAAIAAAAAIAAAAAIAAAAAAAEAAA=</HashCode>
+      <FileName>Screens\SelectScreen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="score" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Scoreboard" Collapsed="true">
+    <Position X="22.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAIIACUECAAESAAgAAIAACNAAAALwAAhAIEEAAA=</HashCode>
+      <FileName>Scoreboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Setup" Collapsed="true">
+    <Position X="20.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBACEAACBMyEMRUCEAgQAAAAgABEBCAAQoAAAAAgAIA=</HashCode>
+      <FileName>Setup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

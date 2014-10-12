@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.GameObjects.Alien">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="Alien" Hidden="true" />
+      <Field Name="currentEvent" Hidden="true" />
+      <Field Name="delta" Hidden="true" />
+      <Field Name="deltaT" Hidden="true" />
+      <Field Name="movePos" Hidden="true" />
+      <Method Name="moveTo" Hidden="true" />
+      <Field Name="rand" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="3.5" Y="3.982" />
+        <Point X="3.5" Y="4.375" />
+        <Point X="4.75" Y="4.375" />
+        <Point X="4.75" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAiIAAAAAJAQiACAAAAAKAAACEBCYACAQgAMAEAAA=</HashCode>
+      <FileName>GameObjects\Alien.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.Wall">
+    <Position X="6" Y="6.75" Width="1.5" />
+    <Members>
+      <Method Name="Wall" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="3.982" />
+        <Point X="3.5" Y="4.375" />
+        <Point X="7.378" Y="4.375" />
+        <Point X="7.378" Y="6.558" />
+        <Point X="7.375" Y="6.558" />
+        <Point X="7.375" Y="6.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAQAAAAAAAAAAAAAEAAAAAIAAAIAAAAA=</HashCode>
+      <FileName>GameObjects\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.Top">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="Top" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="3.5" Y="3.982" />
+        <Point X="3.5" Y="4.375" />
+        <Point X="6.5" Y="4.375" />
+        <Point X="6.5" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAQAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.Bottom">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <Members>
+      <Method Name="Bottom" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true">
+      <Path>
+        <Point X="3.5" Y="3.982" />
+        <Point X="3.5" Y="4.375" />
+        <Point X="8.25" Y="4.375" />
+        <Point X="8.25" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.AlienFactory">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <Members>
+      <Method Name="AlienFactory" Hidden="true" />
+      <Field Name="cm" Hidden="true" />
+      <Field Name="gom" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAQAAAAQAAAAAABAAAAQQAEAAgAABAA=</HashCode>
+      <FileName>GameObjects\AlienFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.BombState">
+    <Position X="14.25" Y="7.25" Width="1.5" />
+    <Members>
+      <Method Name="BombState" Hidden="true" />
+      <Field Name="r" Hidden="true" />
+      <Field Name="ts" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAwABAAAEAAA=</HashCode>
+      <FileName>GameObjects\BombState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.AvailableState">
+    <Position X="13.5" Y="9.5" Width="1.5" />
+    <Members>
+      <Method Name="AvailableState" Hidden="true" />
+      <Field Name="currentEvent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAACAAEAAAAAAAAQAAAQAAAAAAAAQAAAAAAAAAEAAA=</HashCode>
+      <FileName>GameObjects\BombState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.DroppedState">
+    <Position X="15.75" Y="9.5" Width="1.5" />
+    <Members>
+      <Method Name="DroppedState" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>GameObjects\BombState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.CollisionVisitor">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAACAAIAQgAAAAAAAaAAACIAAAAAIAAAIAAAAA=</HashCode>
+      <FileName>GameObjects\CollisionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.GameObject">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Collision" Hidden="true" />
+      <Field Name="cs" Hidden="true" />
+      <Method Name="GameObject" Hidden="true" />
+      <Method Name="getParent" Hidden="true" />
+      <Field Name="gom" Hidden="true" />
+      <Method Name="setGroup" Hidden="true" />
+      <Method Name="setParent" Hidden="true" />
+      <Field Name="soundMan" Hidden="true" />
+      <Field Name="sp" Hidden="true" />
+      <Method Name="Sprite" Hidden="true" />
+      <Field Name="ts" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.CollisionVisitor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.375" Y="3.719" />
+        <Point X="5.375" Y="3.959" />
+        <Point X="4.49" Y="3.959" />
+        <Point X="4.49" Y="0.26" />
+        <Point X="4.125" Y="0.26" />
+        <Point X="4.125" Y="0.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>RACAAAAAAIAAAADEAAAQAIAAAAAEAAAQAlAAogBEAAA=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.GameObjManager">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="currentInstance" Hidden="true" />
+      <Property Name="CurrentInstance" Hidden="true" />
+      <Method Name="GameObjManager" Hidden="true" />
+      <Field Name="instance1" Hidden="true" />
+      <Field Name="instance2" Hidden="true" />
+      <Field Name="sbm" Hidden="true" />
+      <Method Name="setSB" Hidden="true" />
+      <Field Name="sm" Hidden="true" />
+      <Method Name="switchInstance" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="SpaceInvaders.GameObjects.GameObjManager.GOLL" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObjects\GameObjManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIAAAECAABAEGkQiAhAAQAAAEABACAAAAAABIAAEEgg=</HashCode>
+      <FileName>GameObjects\GameObjManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.Missile">
+    <Position X="10.25" Y="4.75" Width="1.5" />
+    <Members>
+      <Field Name="currentEvent" Hidden="true" />
+      <Field Name="delta" Hidden="true" />
+      <Field Name="deltaT" Hidden="true" />
+      <Field Name="fired" Hidden="true" />
+      <Field Name="ir" Hidden="true" />
+      <Method Name="Missile" Hidden="true" />
+      <Method Name="moveTo" Hidden="true" />
+      <Method Name="Name" Hidden="true" />
+      <Field Name="oldPos" Hidden="true" />
+      <Field Name="play" Hidden="true" />
+      <Field Name="ready" Hidden="true" />
+      <Method Name="Velocity" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true">
+      <Path>
+        <Point X="3.5" Y="3.982" />
+        <Point X="3.5" Y="4.375" />
+        <Point X="11" Y="4.375" />
+        <Point X="11" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AEAAKAAECQEAAQgACAAAAASAAICMBAQAiIQAAEAEAAA=</HashCode>
+      <FileName>GameObjects\Missile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mState" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.Bomb">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <Members>
+      <Field Name="available" Hidden="true" />
+      <Method Name="Bomb" Hidden="true" />
+      <Field Name="currentEvent" Hidden="true" />
+      <Field Name="delta" Hidden="true" />
+      <Field Name="deltaT" Hidden="true" />
+      <Field Name="dropped" Hidden="true" />
+      <Field Name="inactivePos" Hidden="true" />
+      <Method Name="moveTo" Hidden="true" />
+      <Method Name="Name" Hidden="true" />
+      <Method Name="oldpos" Hidden="true" />
+      <Field Name="oldPos" Hidden="true" />
+      <Method Name="Velocity" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true">
+      <Path>
+        <Point X="3.5" Y="3.982" />
+        <Point X="3.5" Y="4.36" />
+        <Point X="12.75" Y="4.36" />
+        <Point X="12.75" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAABKAAAAAEIAQgBCEQAAA6AAACEBQQACAQAAMAEAAA=</HashCode>
+      <FileName>GameObjects\Missile.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="bstate" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.MissileState">
+    <Position X="7.75" Y="7" Width="1.5" />
+    <Members>
+      <Method Name="MissileState" Hidden="true" />
+      <Field Name="play" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAggAAAAAEAAA=</HashCode>
+      <FileName>GameObjects\MissileState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.ReadyState">
+    <Position X="6.25" Y="9.25" Width="1.5" />
+    <Members>
+      <Method Name="ReadyState" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAEAAA=</HashCode>
+      <FileName>GameObjects\MissileState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.FiredState">
+    <Position X="8.5" Y="9.25" Width="1.5" />
+    <Members>
+      <Method Name="FiredState" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>GameObjects\MissileState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.Ship">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="currentEvent" Hidden="true" />
+      <Field Name="delta" Hidden="true" />
+      <Field Name="deltaT" Hidden="true" />
+      <Field Name="ir" Hidden="true" />
+      <Field Name="movePos" Hidden="true" />
+      <Method Name="moveTo" Hidden="true" />
+      <Method Name="Ship" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="3.982" />
+        <Point X="3.5" Y="4.36" />
+        <Point X="11.267" Y="4.36" />
+        <Point X="11.267" Y="0.26" />
+        <Point X="12.562" Y="0.26" />
+        <Point X="12.562" Y="0.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AABAiAAACAABAQAAGAAAAAQAAIAEBAQACAQAAEAEAAA=</HashCode>
+      <FileName>GameObjects\Ship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.UFO">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="activeState" Hidden="true" />
+      <Field Name="currentEvent" Hidden="true" />
+      <Field Name="currentEvent1" Hidden="true" />
+      <Field Name="deltaT" Hidden="true" />
+      <Field Name="inactivePos" Hidden="true" />
+      <Field Name="inactiveState" Hidden="true" />
+      <Field Name="Leftpos" Hidden="true" />
+      <Field Name="leftVelocity" Hidden="true" />
+      <Method Name="move1" Hidden="true" />
+      <Method Name="moveTo" Hidden="true" />
+      <Field Name="r" Hidden="true" />
+      <Field Name="Rightpos" Hidden="true" />
+      <Field Name="rightVelocity" Hidden="true" />
+      <Field Name="TS" Hidden="true" />
+      <Method Name="UFO" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.562" Y="3.982" />
+        <Point X="3.562" Y="4.362" />
+        <Point X="14.833" Y="4.362" />
+        <Point X="14.833" Y="0.343" />
+        <Point X="15.875" Y="0.343" />
+        <Point X="15.875" Y="0.5" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="uState" Type="SpaceInvaders.GameObjects.UFOState" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.75" Y="4.188" />
+        <Point X="17.75" Y="4.188" />
+        <Point X="17.75" Y="4.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AABQqIAgAEiICQAgCIACAgAAAAAEBAQACAQBQECEEIA=</HashCode>
+      <FileName>GameObjects\Ship.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="uState" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.SuperGObj">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="checkEnd" Hidden="true" />
+      <Method Name="setGroup" Hidden="true" />
+      <Method Name="shift" Hidden="true" />
+      <Method Name="size" Hidden="true" />
+      <Method Name="SuperGObj" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="3.5" Y="3.982" />
+        <Point X="3.5" Y="4.375" />
+        <Point X="3" Y="4.375" />
+        <Point X="3" Y="5" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="children" Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="5" />
+        <Point X="2.5" Y="2.875" />
+        <Point X="2.75" Y="2.875" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAkAAAKAAIAQSEAIAEAAIAAACEAAAAAEAiAIAGAAA=</HashCode>
+      <FileName>GameObjects\SuperGObj.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="children" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.UFOState">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <Members>
+      <Field Name="currentEvent" Hidden="true" />
+      <Field Name="r" Hidden="true" />
+      <Field Name="TS" Hidden="true" />
+      <Method Name="UFOState" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAQAAAAAAAAAAAAAIBAAAEAIA=</HashCode>
+      <FileName>GameObjects\UFOState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.ActiveState">
+    <Position X="14.25" Y="5.5" Width="1.5" />
+    <Members>
+      <Method Name="ActiveState" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>GameObjects\UFOState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.InactiveState">
+    <Position X="16.25" Y="6.75" Width="1.5" />
+    <Members>
+      <Method Name="InactiveState" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>GameObjects\UFOState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Shield.Shield" Collapsed="true">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="3.982" />
+        <Point X="3.5" Y="4.375" />
+        <Point X="8.625" Y="4.375" />
+        <Point X="8.625" Y="2.875" />
+        <Point X="7.25" Y="2.875" />
+        <Point X="7.25" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAACAAIAQAAAAAIAAQCABAEAAAICAACAAACAAA=</HashCode>
+      <FileName>Shield\Shield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Shield.ShieldBrick" Collapsed="true">
+    <Position X="9" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.562" Y="3.982" />
+        <Point X="3.562" Y="4.375" />
+        <Point X="8.625" Y="4.375" />
+        <Point X="8.625" Y="2.875" />
+        <Point X="9.875" Y="2.875" />
+        <Point X="9.875" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAIABQBAAAAAAQAAAAGAAAAEAACAEBAEAA=</HashCode>
+      <FileName>Shield\ShieldBrick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Shield.ShieldColumn" Collapsed="true">
+    <Position X="2.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAiAAIABQFAAAAAAQAAQAEAAAAAAAAAAACAgA=</HashCode>
+      <FileName>Shield\ShieldColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SpaceInvaders.GameObjects.CollidableObj">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\CollisionVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

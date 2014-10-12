@@ -1,0 +1,115 @@
+
+Features List
+-------------------------------
+
+Working
+-------------------------------
+- Game Cycling
+  - Cycles from Start to Select to Game to Game Over back to Select
+    - Start Screen
+      - Instructions
+      - Point Values
+      - Player Scores
+      - High Score
+    - Select Screen
+      - 1/2 Player Select (2 player option does nothing, disabled)
+      - Ability to add Credits
+    - Game Screen
+      - plays until player dies 3 times
+    - Game Over Screen
+      - Updates High Score if it's a new high score
+- Game able to complete 4 levels
+  - each level gets harder
+    - Aliens 1 row closer
+    - Alien rate faster than previous rate
+- Score
+  - points added as player kills aliens or UFOs
+  - High score updated at end of game
+    - New high score replaces old one if it is higher
+  - Individual scores for each player displayed at top of screen
+- Player
+  - Display player sprite
+  - movement
+    - keyboard
+      - Left/Right move ship
+      - Space fires missile
+  - Number of Lives
+    - Initialized at 3
+    - Decays as player dies
+    - Game over if last life lost
+  - Launches 1 missile at a time
+    - refires when missile has collision
+  - Collision
+    - Missile Hits Shield
+    - Missile Hits Alien
+    - Missile Hits Top
+    - Missile Hits UFO
+    - Missile Hits Bomb
+  - Sound effect on missile launch
+- Alien Grid
+  - Initialized in a 5x11 Grid
+    - Top row squids
+    - Middle 2 rows crabs
+    - Bottom 2 rows octopi
+  - Grid moves horizontally right or left to screen edge
+  - Grid moves down and reverses direction when it hits screen edge
+  - Animated movement
+    - Alien Sprites cycles between 2 images
+    - Animation happens in unison
+  - Speed increases as number of aliens decreases
+  - Aliens drop bombs randomly
+    - bomb relaunch only when bomb hits shield, missile, ship or ground
+    - 3 different types of bombs
+      - zigzag
+      - cross
+      - straight line
+  - Deleted aliens affect the grid movement
+    - when outside columns are destroyed grid has greater range of horizontal movement
+  - Alien Collision with player's missile can happen from either side or vertically
+  - Killed aliens have respective points added to player's score
+  - Marching sound effect happens when aliens are moving
+    - increases as grid moves faster
+- UFO
+  - Launches at random intervals
+  - Move horizontally at top of screen 
+    - either left direction or right direction
+  - Unique sound plays while UFO is on screen
+    - loops while on screen
+  - Explosion sprite when UFO is killed
+  - Player score updated with approriate points
+- Missile/Bombs
+  - Missiles launched one at a time from player
+  - animated effects as missile/ bomb is moving, when appropriate
+  - Missiles and bombs can hit and kill each other
+  - 3 different bomb modes
+- Shields
+  - 4 shields on the screen
+  - Can impede player's missile from traveling towards aliens
+  - Can protect player from bombs
+  - Erosion
+    - Erodes from missiles and from bombs
+  - A hold can be drilled through shield by either bombs or missiles
+  - Multiple hits erode holes in shield
+  - Can be 100% dissolved by combination of missiles and bombs
+  - Graphical effects
+    - erosion "appears" to have dissolve effect
+    - pseudo random dissolve effect
+- Sound
+  - Audio of Aliens marching
+    - Lock step with alien movement
+    - Cycles through 4 sound effects
+    - goes faster as the aliens go faster
+  - Types of sounds
+    - Missile firing
+    - Collisions
+    - Death sound effects
+    - UFO
+  - Can be overlapping
+
+
+Not Working / Variations
+--------------------------
+- 2 Player doesn't work
+- UFOs don't drop bombs
+- Aliens can drop multiple bombs at once
+  - but only 1 of each type at a time

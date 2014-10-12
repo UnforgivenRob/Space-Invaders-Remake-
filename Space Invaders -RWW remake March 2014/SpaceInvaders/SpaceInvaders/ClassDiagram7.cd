@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.Scoreboard">
+    <Position X="2" Y="1.25" Width="1.5" />
+    <Members>
+      <Field Name="instance" Hidden="true" />
+      <Field Name="r" Hidden="true" />
+      <Method Name="Scoreboard" Hidden="true" />
+      <Field Name="sm" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gAAAAAIIACUECAAESAAgAAIAACNAAAALwAAhAIEEAAA=</HashCode>
+      <FileName>Scoreboard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Setup">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <Members>
+      <Field Name="af" Hidden="true" />
+      <Field Name="am" Hidden="true" />
+      <Field Name="cgm" Hidden="true" />
+      <Field Name="cm" Hidden="true" />
+      <Field Name="cpm" Hidden="true" />
+      <Field Name="gom" Hidden="true" />
+      <Field Name="im" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+      <Field Name="sbm" Hidden="true" />
+      <Field Name="scm" Hidden="true" />
+      <Method Name="Setup" Hidden="true" />
+      <Field Name="sf" Hidden="true" />
+      <Field Name="sm" Hidden="true" />
+      <Field Name="sound" Hidden="true" />
+      <Field Name="st" Hidden="true" />
+      <Field Name="tm" Hidden="true" />
+      <Field Name="ts" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IBACEAACBMyEMRUCEAgQAAAAgABEBCAAQoAAAAAgAIA=</HashCode>
+      <FileName>Setup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

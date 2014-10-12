@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.Sound.Sound">
+    <Position X="20" Y="9.5" Width="1.5" />
+    <Members>
+      <Method Name="Sound" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAACAAAAAAAAAACEACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sound\Sound.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="name" />
+      <Field Name="sb" />
+      <Field Name="cue" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Sound.SoundManager">
+    <Position X="15.75" Y="9.5" Width="1.5" />
+    <Members>
+      <Field Name="instance" Hidden="true" />
+      <Property Name="Instance" Hidden="true" />
+      <Method Name="SoundManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAEAAAAAABEAAAAAEAAAABEAAAAQAAAAgAGAAA=</HashCode>
+      <FileName>Sound\SoundManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sounds" />
+      <Field Name="soundBank" />
+      <Field Name="waveBank" />
+      <Field Name="audioEngine" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Sound.SoundLL">
+    <Position X="18" Y="9" Width="1.5" />
+    <Members>
+      <Method Name="SoundLL" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="SpaceInvaders.Sound.SoundLL.node" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Sound\SoundManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAEgAAAAAAEAAAAAAAAAAAAAAAAAAAAAAACAgA=</HashCode>
+      <FileName>Sound\SoundManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.Xna.Framework.Audio.SoundBank" Collapsed="true">
+    <Position X="18" Y="12.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Xna.Framework.Audio.WaveBank" Collapsed="true">
+    <Position X="13.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Xna.Framework.Audio.AudioEngine" Collapsed="true">
+    <Position X="13.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Xna.Framework.Audio.Cue" Collapsed="true">
+    <Position X="22.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="SpaceInvaders.Sound.Sounds" Collapsed="true">
+    <Position X="22.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgACAEAABAAAAAAAgAQGAAAAABAAAAAAAAEAAAA=</HashCode>
+      <FileName>Sound\SoundManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

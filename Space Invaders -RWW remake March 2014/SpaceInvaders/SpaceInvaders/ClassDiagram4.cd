@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.Shield.Shield">
+    <Position X="12" Y="3.25" Width="1.5" />
+    <Members>
+      <Method Name="add" Hidden="true" />
+      <Field Name="g" Hidden="true" />
+      <Method Name="Shield" Hidden="true" />
+      <Method Name="sprite" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" FixedToPoint="true">
+      <Path>
+        <Point X="12.5" Y="1.691" />
+        <Point X="12.5" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAACAAIAQAAAAAIAAQCABAEAAAICAACAAACAAA=</HashCode>
+      <FileName>Shield\Shield.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="columns" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Shield.ShieldSprite" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <Members>
+      <Field Name="bs" Hidden="true" />
+      <Field Name="exSz" Hidden="true" />
+      <Field Name="g" Hidden="true" />
+      <Method Name="getSB" Hidden="true" />
+      <Method Name="initializeBS" Hidden="true" />
+      <Field Name="r" Hidden="true" />
+      <Field Name="sb" Hidden="true" />
+      <Method Name="setSB" Hidden="true" />
+      <Method Name="ShieldSprite" Hidden="true" />
+      <Field Name="spriteBatch" Hidden="true" />
+      <Field Name="text" Hidden="true" />
+    </Members>
+    <AssociationLine Name="explosions" Type="Microsoft.Xna.Framework.Graphics.Texture2D" FixedFromPoint="true">
+      <Path>
+        <Point X="10.25" Y="4.188" />
+        <Point X="9" Y="4.188" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Erase" Type="Microsoft.Xna.Framework.Graphics.Texture2D" FixedFromPoint="true">
+      <Path>
+        <Point X="10.25" Y="4.562" />
+        <Point X="9" Y="4.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAEAgAAACIAMIAAAACACCAAAIAAgDAAAcAgA=</HashCode>
+      <FileName>Shield\ShieldSprite.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="explosions" />
+      <Field Name="renderTarget" />
+      <Field Name="Erase" />
+      <Field Name="text" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SpaceInvaders.Shield.ShieldBrick">
+    <Position X="16.75" Y="3.25" Width="1.5" />
+    <Members>
+      <Field Name="cm" Hidden="true" />
+      <Field Name="hitPos" Hidden="true" />
+      <Method Name="setParent" Hidden="true" />
+      <Method Name="setShield" Hidden="true" />
+      <Field Name="shield" Hidden="true" />
+      <Method Name="ShieldBrick" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="SpaceInvaders.GameObjects.GameObject" ManuallyRouted="true">
+      <Path>
+        <Point X="12.5" Y="1.691" />
+        <Point X="12.5" Y="1.936" />
+        <Point X="17.5" Y="1.936" />
+        <Point X="17.5" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAIABQBAAAAAAQAAAAGAAAAEAACAEBAEAA=</HashCode>
+      <FileName>Shield\ShieldBrick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Shield.ShieldColumn">
+    <Position X="14.5" Y="3.25" Width="1.5" />
+    <Members>
+      <Field Name="cm" Hidden="true" />
+      <Field Name="max" Hidden="true" />
+      <Method Name="setShield" Hidden="true" />
+      <Field Name="shield" Hidden="true" />
+      <Method Name="ShieldColumn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAiAAIABQFAAAAAAQAAQAEAAAAAAAAAAACAgA=</HashCode>
+      <FileName>Shield\ShieldColumn.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="bricks" />
+      <Field Name="shield" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Shield.ShieldFactory">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <Members>
+      <Field Name="cm" Hidden="true" />
+      <Field Name="gom" Hidden="true" />
+      <Field Name="instance" Hidden="true" />
+      <Method Name="ShieldFactory" Hidden="true" />
+      <Field Name="tm" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAAAAQAAAAAABAAEAAQABAAAAAAAA=</HashCode>
+      <FileName>Shield\ShieldFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.SuperGObj" Collapsed="true">
+    <Position X="14.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAkAAAKAAIAQSEAIAEAAIAAACEAAAAAEAiAIAGAAA=</HashCode>
+      <FileName>GameObjects\SuperGObj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.GameObjects.GameObject" Collapsed="true">
+    <Position X="11.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RACAAAAAAIAAAADEAAAQAIAAAAAEAAAQAlAAogBEAAA=</HashCode>
+      <FileName>GameObjects\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sp" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Xna.Framework.Graphics.Texture2D" Collapsed="true">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <Members>
+      <Property Name="Bounds" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.Xna.Framework.Graphics.RenderTarget2D" Collapsed="true">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="SpaceInvaders.Sprites.SpriteProxy" Collapsed="true">
+    <Position X="9.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAIBIAgABAABAAAAAAAAAAAIAEAgA=</HashCode>
+      <FileName>Sprites\SpriteProxy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sprite" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="SpaceInvaders.Sprites.DisplayObj" Collapsed="true">
+    <Position X="10.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAIAAAAAAAAAAAAAAAAAAAAEAgA=</HashCode>
+      <FileName>Sprites\DisplayObj.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

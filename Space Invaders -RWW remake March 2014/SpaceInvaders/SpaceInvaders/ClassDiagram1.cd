@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SpaceInvaders.Sprites.SpriteManager">
+    <Position X="9.75" Y="1.25" Width="1.5" />
+    <Members>
+      <Method Name="SpriteManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAIAAABAAAAAAAABAAIAAQAAAAACAAAA=</HashCode>
+      <FileName>Sprites\SpriteManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sprites" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SpaceInvaders.Sprites.SpriteLL">
+    <Position X="12.25" Y="0.75" Width="1.5" />
+    <Members>
+      <Method Name="beenRetrieved" Hidden="true" />
+      <Method Name="SpriteLL" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="SpaceInvaders.Sprites.SpriteLL.node">
+        <TypeIdentifier>
+          <NewMemberFileName>Sprites\SpriteManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAgAAAAEAEABAAAAAAAAAAAAAAAAAAAAACAgA=</HashCode>
+      <FileName>Sprites\SpriteManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Sprites.Sprite">
+    <Position X="11.75" Y="7" Width="1.5" />
+    <Members>
+      <Field Name="effects" Hidden="true" />
+      <Method Name="getSB" Hidden="true" />
+      <Field Name="origin" Hidden="true" />
+      <Field Name="rotation" Hidden="true" />
+      <Method Name="setSB" Hidden="true" />
+      <Method Name="Sprite" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAIAKAAIAGEAAAAACAAAAAIIAEAgA=</HashCode>
+      <FileName>Sprites\Sprite.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.137" />
+  </Class>
+  <Class Name="SpaceInvaders.Sprites.ConcreteSpritePos">
+    <Position X="9.75" Y="8.75" Width="1.5" />
+    <Members>
+      <Field Name="obj" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAIAIIAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Sprites\ConcreteSpritePos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpaceInvaders.Sprites.SpriteProxy">
+    <Position X="9.75" Y="5.75" Width="1.5" />
+    <Members>
+      <Method Name="getSB" Hidden="true" />
+      <Method Name="setSB" Hidden="true" />
+      <Method Name="SpriteProxy" Hidden="true" />
+    </Members>
+    <AssociationLine Name="sprite" Type="SpaceInvaders.Sprites.DisplayObj" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.25" Y="6.375" />
+        <Point X="12.5" Y="6.375" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAIBIAgABAABAAAAAAAAAAAIAEAgA=</HashCode>
+      <FileName>Sprites\SpriteProxy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sprite" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.232" />
+  </Class>
+  <Class Name="SpaceInvaders.Shield.ShieldSprite" Collapsed="true">
+    <Position X="14" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAEAgAAACIAMIAAAACACCAAAIAAgDAAAcAgA=</HashCode>
+      <FileName>Shield\ShieldSprite.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="SpaceInvaders.Collision.CollisionSprite" Collapsed="true">
+    <Position X="14" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAhQAYAIAAIgAAAAYAAAAAAAAAIAEgkA=</HashCode>
+      <FileName>Collision\CollisionSprite.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="SpaceInvaders.Sprites.TextSprite">
+    <Position X="13.75" Y="7" Width="1.5" />
+    <Members>
+      <Property Name="depth" Hidden="true" />
+      <Field Name="effects" Hidden="true" />
+      <Method Name="getSB" Hidden="true" />
+      <Field Name="origin" Hidden="true" />
+      <Field Name="rotation" Hidden="true" />
+      <Method Name="setSB" Hidden="true" />
+      <Method Name="setText" Hidden="true" />
+      <Method Name="TextSprite" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>DAIAAAAAAAAAAAAAIAKAAICGAAAAAACAAAAAIIAEAgA=</HashCode>
+      <FileName>Sprites\TextSprite.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Interface Name="SpaceInvaders.Sprites.DisplayObj" Collapsed="true">
+    <Position X="12.5" Y="6" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAIAAAAAAAAAAAAAAAAAAAAEAgA=</HashCode>
+      <FileName>Sprites\DisplayObj.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SpaceInvaders.Sprites.SpriteKey" Collapsed="true">
+    <Position X="10.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEABoCgAAKGAIEAAMygAAIAAAAABIyAAQAUAEQAAQ=</HashCode>
+      <FileName>Sprites\SpriteManager.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
